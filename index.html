@@ -19,22 +19,30 @@
       .sharetechmono{
         font-family: 'Share Tech Mono', monospace;
       }
-      .orderhere {
-        overflow: hidden;
-        background-color: #333;
-      }
-      .orderhere a {
-        float: none;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
+      a.orderhere{
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #FFFFFF;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
         text-decoration: none;
-        font-family: 'Share Tech Mono', monospace;
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#FFFFFF;
+        text-align:center;
+        transition: all 0.2s;
       }
-      .orderhere a:hover{
-        background-color: rgb(88, 88, 88);
+      a.orderhere:hover{
+        color:#000000;
+        background-color:#FFFFFF;
       }
+      @media all and (max-width:30em){
+       a.orderhere{
+        display:block;
+        margin:0.4em auto;
+      }
+    }
     </style>
 
   </head>
